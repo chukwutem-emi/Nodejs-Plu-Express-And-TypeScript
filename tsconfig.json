@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "esModuleInterop": true,  // It will ensure that in our typeScript-node.js project, we won't run into any problems related to import statements or import states that might be used by third-party libraries we're using.
+        "skipLibCheck": true,
+        "module": "nodeNext",
+        "outDir": "dist",
+        "lib": ["es2022", "dom"],
+        "strict": true,
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
+        "verbatimModuleSyntax": true,
+        "erasableSyntaxOnly": true
+    }
+}
