@@ -1,15 +1,18 @@
 {
     "compilerOptions": {
-        "target": "es2022",
-        "esModuleInterop": true,  // It will ensure that in our typeScript-node.js project, we won't run into any problems related to import statements or import states that might be used by third-party libraries we're using.
-        "skipLibCheck": true,
-        "module": "nodeNext",
-        "outDir": "dist",
-        "lib": ["es2022", "dom"],
-        "strict": true,
-        "allowImportingTsExtensions": true,
-        "noEmit": true,
-        "verbatimModuleSyntax": true,
-        "erasableSyntaxOnly": true
+        "target": "es2022",  // Tells TypeScript to assume modern javaScript support.
+        "esModuleInterop": true,  // Makes imports from commonjs libraries work smoothly.
+        "skipLibCheck": true, // Skips type-checking third-party libraries to speed things up
+        "module": "nodeNext", // Uses Node.js's native ESM module rules.
+        "outDir": "dist", // Defines where compiled files would go.
+        // "rootDir": "src",
+        "lib": ["ES2022"], // Enables modern javaScript and browser APIs.
+        "types": ["node"],
+        "strict": true, // Turns ON maximum type safety checks.
+        // "allowImportingTsExtensions": true, // Allows import files with .ts extensions.
+        // "noEmit": false, // Prevents TypeScript from generating javaScript files.
+        "verbatimModuleSyntax": true, // Stops TypeScript from rewriting your imports/exports
+        "erasableSyntaxOnly": true // Ensures TypeScript can be removed without runtime impact.
     }
+    // "include": ["src"] // Only look inside the src folder when type checking and compiling.
 }

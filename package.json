@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "\"It is all about using TypeScript with node.js\"",
   "main": "index.js",
-  "type": "module",
+  "type": "module", 
   "scripts": {
     "test": "jest",
     "compile": "tsc",
-    "start": "node dist/app.js"
+    "start": "node dist/app.js",
+    "dev": "tsx watch src/app.ts"
   },
   "repository": {
     "type": "git",
