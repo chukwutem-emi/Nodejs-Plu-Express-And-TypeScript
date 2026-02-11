@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
-        "target": "es2022",  // Tells TypeScript to assume modern javaScript support.
+        "target": "ES2017",  // Tells TypeScript to assume modern javaScript support.
         "esModuleInterop": true,  // Makes imports from commonjs libraries work smoothly.
         "skipLibCheck": true, // Skips type-checking third-party libraries to speed things up
         "module": "nodeNext", // Uses Node.js's native ESM module rules.
         "outDir": "dist", // Defines where compiled files would go.
         // "rootDir": "src",
-        "lib": ["ES2022"], // Enables modern javaScript and browser APIs.
+        "lib": ["ES2017"], // Enables modern javaScript and browser APIs.
         "types": ["node"],
         "strict": true, // Turns ON maximum type safety checks.
         // "allowImportingTsExtensions": true, // Allows import files with .ts extensions.
